@@ -1,0 +1,4 @@
+AuthName "Admin"
+AuthType Basic
+AuthUserFile AuthUserFile /kunden/homepages/13/d461690836/htdocs/labcode/labcode.de/admin/.htpasswd
+require valid-user

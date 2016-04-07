@@ -1,0 +1,10 @@
+RewriteEngine On
+
+#404
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) /404.php
+
+ErrorDocument 404 /404.php
+
+RemoveType x-mapp-php4 .html

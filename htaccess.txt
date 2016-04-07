@@ -1,0 +1,4 @@
+AuthName "Im Aufbau"
+AuthType Basic
+AuthUserFile /kunden/homepages/13/d461690836/htdocs/labcode/labcode.de/.htpasswd
+require valid-user

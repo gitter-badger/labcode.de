@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="gss.xsl"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84 http://www.google.com/schemas/sitemap/0.84/sitemap.xsd">
+<!-- Created by phpSitemapNG version 1.5.4b -->
+<!-- Last update of sitemap 2016-04-06T18:10:48+02:00 -->
+<url>
+<loc>http://labcode.de/index.php</loc>
+<lastmod>2016-03-09T20:36:00+02:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>http://labcode.de/webapps/rechner.html</loc>
+<lastmod>2016-03-09T20:40:43+02:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>http://labcode.de/webapps/zahlenraten.html</loc>
+<lastmod>2016-03-09T20:41:03+02:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>http://labcode.de/webapps/zufall.html</loc>
+<lastmod>2016-03-09T20:41:21+02:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+</urlset>
