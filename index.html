@@ -14,8 +14,7 @@
     <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
     <link href="min/custom-min.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
-    <script src="//data.labcode.de/js/gsc.js"></script>
-    <script src="//labcode.de/js/font.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
     <script type="text/javascript">
         window.cookieconsent_options = {
@@ -25,6 +24,18 @@
             "link": null,
             "theme": "light-top"
         };
+        $.ajax({
+            url:'js/minified.js',
+            error: function()
+            {
+                $('head').append("<script src='//data.labcode.de/js/gsc.js' /><script src='//labcode.de/js/font.js'/>");
+                $('body').append('<script src="js/plugin-min.js" /><script src="js/custom-min.js" />')
+            },
+            success: function()
+            {
+                $('head').append('<script src="js/minified.js" />')
+            }
+        });
     </script>
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
@@ -229,11 +240,6 @@
         </div>
     </div>
 
-    <!--Parallax-->
-    <div class="parallax-container">
-        <div class="parallax"><img alt="Parallax" src="img/parallax3.svg"></div>
-    </div>
-
     <!--Team-->
     <div class="section scrollspy" id="team">
         <div class="container">
@@ -328,15 +334,13 @@
         </div>
         <div class="container">
             Powered by <a class="white-text" href="//zen.coderdojo.com/dojo/385">CoderDojo CGN,<a/> <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
+            </a>
         </div>
         </div>
     </footer>
 
 
     <!--  Scripts-->
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="min/plugin-min.js"></script>
-    <script src="min/custom-min.js"></script>
     <script src='//www.google.com/recaptcha/api.js'></script>
 </body>
 
