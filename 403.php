@@ -55,7 +55,8 @@
     <div class="container">
         <div class="row">
             <div  class="col s12">
-                <h2 class="center header text_h2">Der Autor der Site wusste nicht, dass <span class="span_h2">coole</span> URLs (<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']?>) nicht verboten aufzurufen und hat daher diese Seite gesperrt.</h2>
+                <h2 class="center header text_h2">Der Autor der Site
+                    wusste nicht, dass <span class="span_h2">coole</span> URLs (<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']?>) nicht verboten sind aufzurufen und hat daher diese Seite gesperrt.</h2>
             </div>
 
         </div>
