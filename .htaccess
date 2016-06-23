@@ -6,10 +6,12 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule (.*) /404.php
 
 ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
 
 RemoveType x-mapp-php4 .html
 
 # compress text, html, javascript, css, xml:
+AddType image/svg+xml .svg
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
 AddOutputFilterByType DEFLATE text/xml
@@ -20,3 +22,4 @@ AddOutputFilterByType DEFLATE application/xhtml+xml
 AddOutputFilterByType DEFLATE application/rss+xml
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE image/svg+xml
